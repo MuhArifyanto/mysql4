@@ -310,8 +310,18 @@ SELECT sex, COUNT(*) AS jumlah_hewan FROM hewan WHERE sex IS NOT NULL GROUP BY s
 
 # Penggunaan Query untuk Pengambilan Data:
 
-Pengambilan Konsistensi Penulisan dan Penggunaan Data Types: Penting untuk menggunakan tipe data yang tepat dan memastikan konsistensi dalam definisi tabel.
-
+- Pengambilan Semua Data: Menggunakan SELECT * FROM untuk menampilkan seluruh data dalam tabel.
+- Pengambilan Data dengan Kondisi Khusus:
+  Menampilkan karyawan dengan gaji selain 2.000.000 atau 1.250.000.
+  Menampilkan karyawan dengan tunjangan yang bernilai NULL atau tidak NULL.
+- Penghitungan dan Agregasi Data:
+  Menghitung jumlah total karyawan menggunakan COUNT.
+  Menghitung total gaji seluruh karyawan menggunakan SUM.
+  Menghitung rata-rata gaji karyawan menggunakan AVG.
+- Menemukan gaji terkecil dan terbesar menggunakan MIN dan MAX.
+  Pengelompokan Data:
+  Menghitung jumlah hewan berdasarkan pemilik, spesies, dan jenis kelamin menggunakan GROUP BY.
+  Menghitung jumlah hewan per kombinasi spesies dan jenis kelamin tertentu.
 # poin-poin dalam SQL
 - Konsistensi Penulisan dan Penggunaan Data Types: Penting untuk menggunakan tipe data yang tepat dan memastikan konsistensi dalam definisi tabel.
 - Keunikan Data: Menggunakan constraint seperti PRIMARY KEY dan UNIQUE untuk memastikan keunikan data pada kolom tertentu.
