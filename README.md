@@ -7,7 +7,7 @@
 
 # Soal Latihan Praktikum ( Pegawai )
 
-#Buat table pegawai dan isi datanya sebagai berikut
+# Buat table pegawai dan isi datanya sebagai berikut
 ![tugas4opening](https://github.com/MuhArifyanto/mysql4/assets/147913440/34497cf6-9faf-4f38-9795-82aa0330e5d0)
 
 **Perintah SQL :**
@@ -138,7 +138,9 @@ SELECT MAX(gaji) AS terbesar FROM pegawai;
 
 # Soal Latihan Praktikum ( Hewan )
 
-![alt text](Screenshot/TugasPraktikumH.png)
+# Buat table hewan dan isi datanya sebagai berikut
+
+![tugas4last](https://github.com/MuhArifyanto/mysql4/assets/147913440/c5e45f7b-fd5b-4b94-82a8-ec1aea8ce6e0)
 
 **Perintah SQL :**
 
@@ -164,7 +166,7 @@ INSERT INTO hewan VALUES
 
 ***Output :***
 
-![alt text](Screenshot/h10.png)
+
 
 ## Tugas Praktikum
 
@@ -176,7 +178,8 @@ SELECT owner, COUNT(*) AS jmlh_hewan FROM hewan GROUP BY owner;
 
 ***Output :***
 
-![alt text](Screenshot/h11.png)
+![tugas4(2)](https://github.com/MuhArifyanto/mysql4/assets/147913440/720d9e7f-2961-4a34-97bc-027a1ad42c79)
+
 
 **2. Tampilkan jumlah hewan berdasarkan spesies**
 
@@ -186,7 +189,8 @@ SELECT species, COUNT(*) AS jmlh_hewan FROM hewan GROUP BY species;
 
 ***Output :***
 
-![alt text](Screenshot/h12.png)
+![tugas4(3)](https://github.com/MuhArifyanto/mysql4/assets/147913440/a309022c-334c-4232-907c-d9939fd72a26)
+
 
 **3. Tampilkan jumlah hewan berdasarkan jenis kelamin**
 
@@ -196,7 +200,8 @@ SELECT sex, COUNT(*) AS jmlh_hewan FROM hewan GROUP BY sex;
 
 ***Output :***
 
-![alt text](Screenshot/h13.png)
+![tugas4(4)](https://github.com/MuhArifyanto/mysql4/assets/147913440/5a2cddb0-37cf-49dc-9139-13b0ef20e60a)
+
 
 **4. Tampilkan jumlah hewan berdasarkan spesies dan jenis kelamin**
 
@@ -206,7 +211,7 @@ SELECT species, sex, COUNT(*) AS jumlah_hewan FROM hewan GROUP BY species, sex;
 
 ***Output :***
 
-![alt text](Screenshot/h14.png)
+![tugas4(4)](https://github.com/MuhArifyanto/mysql4/assets/147913440/2692cadc-76c7-4d95-af44-5e9d8b65d4e4)
 
 **5. Tampilkan jumlah hewan berdasarkan spesis (cat dan dog saja) dan jenis kelamin**
 
@@ -218,7 +223,8 @@ GROUP BY species, sex;
 
 ***Output :***
 
-![alt text](Screenshot/h15.png)
+![tugas4(6)](https://github.com/MuhArifyanto/mysql4/assets/147913440/17a8ba72-83f5-4fc6-ba92-8ce8292647f7)
+
 
 **6. Tampilkan jumlah hewan berdasarkan jenis kelamin yang diketahui saja**
 
@@ -228,7 +234,8 @@ SELECT sex, COUNT(*) AS jumlah_hewan FROM hewan WHERE sex IS NOT NULL GROUP BY s
 
 ***Output :***
 
-![alt text](Screenshot/h16.png)
+![tugas4(7)](https://github.com/MuhArifyanto/mysql4/assets/147913440/1e8f282e-90b3-4a65-99d8-75082d7beef2)
+
 
 ## Tulis semua perintah-perintah SQL percobaan di atas beserta outputnya!
 
@@ -247,7 +254,7 @@ CREATE TABLE pegawai (
     tunjangan INT
     );
 INSERT INTO pegawai VALUES
-  ('E001', 'Ferry', 'Gustiawan', 'ferry@yahoo.com', '07117059004', '2005-09-01', 'L0001', 2000000, 500000),
+        ('E001', 'Ferry', 'Gustiawan', 'ferry@yahoo.com', '07117059004', '2005-09-01', 'L0001', 2000000, 500000),
 	('E002', 'Aris', 'Ganiardi', 'aris@yahoo.com', '081312345678', '2006-09-01', 'L0002', 2000000, 200000),
 	('E003', 'Faiz', 'Ahnad', 'faiz@gmail.com', '081367384322', '2006-10-01', 'L0003', 1500000, NULL),
 	('E004', 'Emna', 'Bunton', 'emna@gmail.com', '081363484342', '2006-10-01', 'L0004', 1500000, 9),
@@ -289,3 +296,25 @@ SELECT sex, COUNT(*) AS jumlah_hewan FROM hewan WHERE sex IS NOT NULL GROUP BY s
 ```
 
 ## Berikan Kesimpulan Anda !
+``
+# Pembuatan Database dan Tabel: 
+Di dalam database ini, dua tabel dibuat: pegawai dan hewan.
+Tabel pegawai berisi informasi tentang karyawan, termasuk ID karyawan, nama depan, nama belakang, email, telepon, tanggal kontrak, ID pekerjaan, gaji, dan tunjangan.
+Tabel hewan berisi informasi tentang hewan, termasuk ID hewan, nama, pemilik, spesies, dan jenis kelamin.
+
+#Penambahan Data ke Tabel:
+
+Data untuk masing-masing tabel dimasukkan menggunakan pernyataan INSERT INTO.
+Pada tabel pegawai, data karyawan ditambahkan dengan berbagai nilai untuk kolom yang telah didefinisikan.
+Pada tabel hewan, data hewan ditambahkan dengan informasi terkait pemilik dan jenis kelamin.
+
+# Penggunaan Query untuk Pengambilan Data:
+
+PengambKonsistensi Penulisan dan Penggunaan Data Types: Penting untuk menggunakan tipe data yang tepat dan memastikan konsistensi dalam definisi tabel.
+
+# poin-poin dalam SQL
+Keunikan Data: Menggunakan constraint seperti PRIMARY KEY dan UNIQUE untuk memastikan keunikan data pada kolom tertentu.
+Agregasi dan Pengelompokan: Fungsi agregasi dan pengelompokan (COUNT, SUM, AVG, MIN, MAX, GROUP BY) sangat berguna untuk analisis data.
+Penggunaan NULL: Penanganan nilai NULL harus diperhatikan dalam kondisi dan agregasi.ilan Semua Data: Menggunakan SELECT * FROM untuk menampilkan seluruh data dalam tabel.
+``
+
