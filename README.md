@@ -166,6 +166,7 @@ INSERT INTO hewan VALUES
 
 ***Output :***
 
+![tugas4(1)](https://github.com/MuhArifyanto/mysql4/assets/147913440/c06719b8-42a2-454b-ab97-6b5c482c4bd2)
 
 
 ## Tugas Praktikum
