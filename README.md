@@ -298,23 +298,24 @@ SELECT sex, COUNT(*) AS jumlah_hewan FROM hewan WHERE sex IS NOT NULL GROUP BY s
 ## Berikan Kesimpulan Anda !
 ``
 # Pembuatan Database dan Tabel: 
-Di dalam database ini, dua tabel dibuat: pegawai dan hewan.
-Tabel pegawai berisi informasi tentang karyawan, termasuk ID karyawan, nama depan, nama belakang, email, telepon, tanggal kontrak, ID pekerjaan, gaji, dan tunjangan.
-Tabel hewan berisi informasi tentang hewan, termasuk ID hewan, nama, pemilik, spesies, dan jenis kelamin.
+- Di dalam database ini, dua tabel dibuat: pegawai dan hewan.
+- Tabel pegawai berisi informasi tentang karyawan, termasuk ID karyawan, nama depan, nama belakang, email, telepon, tanggal kontrak, ID pekerjaan, gaji, dan tunjangan.
+- Tabel hewan berisi informasi tentang hewan, termasuk ID hewan, nama, pemilik, spesies, dan jenis kelamin.
 
 #Penambahan Data ke Tabel:
 
-Data untuk masing-masing tabel dimasukkan menggunakan pernyataan INSERT INTO.
-Pada tabel pegawai, data karyawan ditambahkan dengan berbagai nilai untuk kolom yang telah didefinisikan.
-Pada tabel hewan, data hewan ditambahkan dengan informasi terkait pemilik dan jenis kelamin.
+-  Data untuk masing-masing tabel dimasukkan menggunakan pernyataan INSERT INTO.
+- Pada tabel pegawai, data karyawan ditambahkan dengan berbagai nilai untuk kolom yang telah didefinisikan.
+- Pada tabel hewan, data hewan ditambahkan dengan informasi terkait pemilik dan jenis kelamin.
 
 # Penggunaan Query untuk Pengambilan Data:
 
-PengambKonsistensi Penulisan dan Penggunaan Data Types: Penting untuk menggunakan tipe data yang tepat dan memastikan konsistensi dalam definisi tabel.
+Pengambilan Konsistensi Penulisan dan Penggunaan Data Types: Penting untuk menggunakan tipe data yang tepat dan memastikan konsistensi dalam definisi tabel.
 
 # poin-poin dalam SQL
-Keunikan Data: Menggunakan constraint seperti PRIMARY KEY dan UNIQUE untuk memastikan keunikan data pada kolom tertentu.
-Agregasi dan Pengelompokan: Fungsi agregasi dan pengelompokan (COUNT, SUM, AVG, MIN, MAX, GROUP BY) sangat berguna untuk analisis data.
-Penggunaan NULL: Penanganan nilai NULL harus diperhatikan dalam kondisi dan agregasi.ilan Semua Data: Menggunakan SELECT * FROM untuk menampilkan seluruh data dalam tabel.
+- Konsistensi Penulisan dan Penggunaan Data Types: Penting untuk menggunakan tipe data yang tepat dan memastikan konsistensi dalam definisi tabel.
+- Keunikan Data: Menggunakan constraint seperti PRIMARY KEY dan UNIQUE untuk memastikan keunikan data pada kolom tertentu.
+- Agregasi dan Pengelompokan: Fungsi agregasi dan pengelompokan (COUNT, SUM, AVG, MIN, MAX, GROUP BY) sangat berguna untuk analisis data.
+- Penggunaan NULL: Penanganan nilai NULL harus diperhatikan dalam kondisi dan agregasi.
 ``
 
