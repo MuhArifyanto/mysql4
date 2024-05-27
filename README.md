@@ -302,7 +302,7 @@ SELECT sex, COUNT(*) AS jumlah_hewan FROM hewan WHERE sex IS NOT NULL GROUP BY s
 - Tabel pegawai berisi informasi tentang karyawan, termasuk ID karyawan, nama depan, nama belakang, email, telepon, tanggal kontrak, ID pekerjaan, gaji, dan tunjangan.
 - Tabel hewan berisi informasi tentang hewan, termasuk ID hewan, nama, pemilik, spesies, dan jenis kelamin.
 
-#Penambahan Data ke Tabel:
+# Penambahan Data ke Tabel:
 
 -  Data untuk masing-masing tabel dimasukkan menggunakan pernyataan INSERT INTO.
 - Pada tabel pegawai, data karyawan ditambahkan dengan berbagai nilai untuk kolom yang telah didefinisikan.
